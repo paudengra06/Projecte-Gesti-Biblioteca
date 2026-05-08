@@ -7,7 +7,7 @@ public class Llibre {
 
     public Llibre(String titol, String autor, String categoria) {
         this.titol = titol;
-        this.autor = autor;
+        this.autor = autor; 
         this.categoria = categoria;
         this.prestat = false;
         this.numPrestecs = 0;
