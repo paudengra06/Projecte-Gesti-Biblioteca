@@ -10,13 +10,20 @@ public class Biblioteca {
         this.usuaris = new ArrayList<>();
     }
 
-    public void afegirLlibre(Llibre llibre) { llibres.add(llibre); }
-    public void registrarUsuari(Usuari usuari) { usuaris.add(usuari); }
+    public void afegirLlibre(Llibre llibre) { 
+        llibres.add(llibre); 
+    }
 
+    public void registrarUsuari(Usuari usuari) { 
+        usuaris.add(usuari); 
+    }
+    
     // Metodo para la gestion de categorias 
     public List<Llibre> filtrarPerCategoria(String cat) {
         List<Llibre> resultats = new ArrayList<>();
+       
         for (Llibre l : llibres) {
+
             if (l.getCategoria().equalsIgnoreCase(cat)) resultats.add(l);
         }
         return resultats;

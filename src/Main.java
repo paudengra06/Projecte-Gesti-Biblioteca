@@ -21,7 +21,6 @@ public class Main {
         biblioteca.registrarUsuari(usuari1);
         biblioteca.registrarUsuari(usuari2);
 
-        // 4. Simulació de préstecs
         System.out.println("--- Gestió de Préstecs ---");
         gestor.prestarLlibre(usuari1, llibre1); 
         gestor.prestarLlibre(usuari2, llibre1); // Intent de préstec (ja prestat)

@@ -4,8 +4,8 @@ import java.util.List;
 public class Usuari {
     private String nom;
     private List<Llibre> llibresActuals;
-    private List<Llibre> historialPrestecs; // Nova millora: Historial
-    private int totalPrestecs; // Per a estadístiques
+    private List<Llibre> historialPrestecs; //Historial de todos los libros
+    private int totalPrestecs; // Este sera el contador PAU
 
     public Usuari(String nom) {
         this.nom = nom;
@@ -14,9 +14,15 @@ public class Usuari {
         this.totalPrestecs = 0;
     }
 
-    public String getNom() { return nom; }
-    public int getTotalPrestecs() { return totalPrestecs; }
-    public List<Llibre> getHistorial() { return historialPrestecs; }
+    public String getNom() { 
+        return nom; 
+    }
+    public int getTotalPrestecs() { 
+        return totalPrestecs; 
+    }
+    public List<Llibre> getHistorial() { 
+        return historialPrestecs; 
+    }
 
     public void afegirLlibre(Llibre llibre) { 
         llibresActuals.add(llibre); 
@@ -27,4 +33,5 @@ public class Usuari {
     public void retornarLlibre(Llibre llibre) { 
         llibresActuals.remove(llibre); 
     }
+
 }
