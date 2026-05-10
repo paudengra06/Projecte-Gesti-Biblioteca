@@ -1,9 +1,9 @@
 public class Llibre {
     private String titol;
     private String autor;
-    private String categoria; // Nova millora
+    private String categoria; 
     private boolean prestat;
-    private int numPrestecs; // Per a estadístiques
+    private int numPrestecs; 
 
     public Llibre(String titol, String autor, String categoria) {
         this.titol = titol;
@@ -13,16 +13,28 @@ public class Llibre {
         this.numPrestecs = 0;
     }
 
-    public String getTitol() { return titol; }
-    public String getCategoria() { return categoria; }
-    public int getNumPrestecs() { return numPrestecs; }
+    public String getTitol() {
+         return titol; 
+    }
+    public String getCategoria() {
+         return categoria; 
+    }
+    public int getNumPrestecs() { 
+        return numPrestecs; 
+    }
 
     public void prestar() { 
         this.prestat = true; 
         this.numPrestecs++; // Incrementar historial global del llibre
     }
-    public void retornar() { this.prestat = false; }
-    public boolean esPrestat() { return prestat; }
+
+    //Metodo para volver a dejar disponible el libro
+    public void retornar() { 
+        this.prestat = false; 
+    }
+    public boolean esPrestat() { 
+        return prestat; 
+    }
 
     @Override
     public String toString() {
