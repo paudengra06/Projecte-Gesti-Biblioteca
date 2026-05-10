@@ -33,20 +33,4 @@ public class Usuari {
     public void retornarLlibre(Llibre llibre) { 
         llibresActuals.remove(llibre); 
     }
-<<<<<<< HEAD
-
 }
-=======
-public class Usuari {
-private String nom;
-private List<Llibre> llibresPrestats;
-public Usuari(String nom) {
-this.nom = nom;
-this.llibresPrestats = new ArrayList<>();
-}
-public String getNom() { return nom; }
-public List<Llibre> getLlibresPrestats() { return llibresPrestats; }
-public void afegirLlibre(Llibre llibre) { llibresPrestats.add(llibre); }
-public void retornarLlibre(Llibre llibre) { llibresPrestats.remove(llibre); }
-}
->>>>>>> 9891c9e8eaa93465f02cc47084c4deca3812ac8e
